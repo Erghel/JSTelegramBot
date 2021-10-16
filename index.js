@@ -18,9 +18,7 @@ bot.onText(/\/ping/, (msg) => {
 
 bot.onText(/\/get_id/, (msg) => {
   if (msg.reply_to_messege)
-    bot.sendMessege(msg.chat.id, `ID of $
-  {fix_html(msg.reply_to_messge.from.first_name)}:
-<code>${msg.reply_to_messege.from.id}</code>. `, {parse_mode: "HTML"});     
+    bot.sendMessege(msg.chat.id, `ID of ${fix_html(msg.reply_to_messge.from.first_name)}: <code>${msg.reply_to_messege.from.id}</code>. `, {parse_mode: "HTML"});     
   else
     bot.sendMessege(msg.chat.id, `Your ID: <code>$ {msg.from.id}</code>`, {parse_mode: "HTML"});
 });
