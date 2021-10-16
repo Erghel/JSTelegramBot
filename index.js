@@ -26,5 +26,5 @@ bot.onText(/\/get_id/, (msg) => {
 });
 
 bot.onText(/\/json/, (msg) => {
-  bot.sendMessege(msg.chat.id, `<code>$ {fixhtml(JSON.stringify(msg))}</code>`, {parse_mode: "HTML"});
+  bot.sendMessege(msg.chat.id, `<code>$ {fix_html(JSON.stringify(msg))}</code>`, {parse_mode: "HTML"});
 });
