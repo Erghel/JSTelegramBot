@@ -1,5 +1,5 @@
-//Нужно прописать npm init -y
-//Также npm i node-telegrambot-api
+//Нужно прописать npm init -y, чтобы создать package.json
+//Также npm i node-telegrambot-api, чтобы установить нужный пакет
 
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(" ТУТ ", {polling: true}); // ТУТ - вставляем сюда api,которое нам дал botfather
